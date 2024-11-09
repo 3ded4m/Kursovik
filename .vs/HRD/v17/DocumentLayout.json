@@ -1,0 +1,364 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|f:\\\u043A\u0443\u0440\u0441\u0430\u0447\\hrd\\hrd\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\reviewrequestswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\reviewrequestswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\reviewrequestswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\reviewrequestswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\leaverequestswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\leaverequestswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\leaverequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\leaverequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\hrrequestswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\hrrequestswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\hrrequestswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\hrrequestswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\employeemainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\employeemainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\employeemainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\employeemainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\leavebalancewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\leavebalancewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\leavebalancewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\leavebalancewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\requestleavewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\requestleavewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\addleaverequestwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\addleaverequestwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\reportsandstatisticswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\reportsandstatisticswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\addedittaskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\addedittaskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\taskviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\taskviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\tasksviewwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\tasksviewwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\taskadminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\taskadminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\taskadminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\taskadminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\hrd\\addedittaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028712A4-646C-49E6-84E1-420C5A97CDBA}|HRD\\HRD.csproj|solutionrelative:hrd\\addedittaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LeaveRequestViewModel.cs",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\LeaveRequestViewModel.cs",
+              "RelativeDocumentMoniker": "HRD\\LeaveRequestViewModel.cs",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\LeaveRequestViewModel.cs",
+              "RelativeToolTip": "HRD\\LeaveRequestViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-11-08T10:23:02.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReviewRequestsWindow.xaml.cs",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\ReviewRequestsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HRD\\ReviewRequestsWindow.xaml.cs",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\ReviewRequestsWindow.xaml.cs",
+              "RelativeToolTip": "HRD\\ReviewRequestsWindow.xaml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAtwB4AAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVDhPY0AGretv/t9x7tl/KJd0sOfii/\u002Bimfv\u002Bbzv7lGhDGBlid2Eo1pTkZNiSLsVQWVkJFWFgYGdnZygoKGAwNjZmhAphgt0XnsFd8P79\u002B/9Pnz6F47CwsP/R0dH/z549i2IhE5QGg1P3PzMsTtVgsFTiYvj27RtUFAF\u002B//7N0NfXx4BsCIoBIVoMDOaKnFg1wwDIkAkTJkB5oDBAAnFxcf/b29uhPNygsLCQYdWqVWC9KC748eMHlEU8QDGAHDBqABUMQEkHmZmZ/9\u002B\u002BfQvl4QbCwsIM06dPx50niAcMDADfJl5g9BqhpwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-11-08T10:23:02.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReviewRequestsWindow.xaml",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\ReviewRequestsWindow.xaml",
+              "RelativeDocumentMoniker": "HRD\\ReviewRequestsWindow.xaml",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\ReviewRequestsWindow.xaml",
+              "RelativeToolTip": "HRD\\ReviewRequestsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T10:23:02.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HRRequestsWindow.xaml.cs",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\HRRequestsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HRD\\HRRequestsWindow.xaml.cs",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\HRRequestsWindow.xaml.cs",
+              "RelativeToolTip": "HRD\\HRRequestsWindow.xaml.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAlwBIAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVDhPY0AGretv/t9x7tl/KJd0sOfii/\u002Bimfv\u002Bbzv7lGhDGBlid2Eo1pTkZNiSLsVQWVkJFWFgYGdnZygoKGAwNjZmhAphgt0XnsFd8P79\u002B/9Pnz6F47CwsP/R0dH/z549i2IhE5QGg1P3PzMsTtVgsFTiYvj27RtUFAF\u002B//7N0NfXx4BsCIoBIVoMDOaKnFg1wwDIkAkTJkB5oDBAAnFxcf/b29uhPNygsLCQYdWqVWC9KC748eMHlEU8QDGAHDBqABUMQEkHmZmZ/9\u002B\u002BfQvl4QbCwsIM06dPx50niAcMDADfJl5g9BqhpwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-11-08T10:23:02.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LeaveRequestsWindow.xaml.cs",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\LeaveRequestsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HRD\\LeaveRequestsWindow.xaml.cs",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\LeaveRequestsWindow.xaml.cs",
+              "RelativeToolTip": "HRD\\LeaveRequestsWindow.xaml.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAqwDYAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVDhPY0AGretv/t9x7tl/KJd0sOfii/\u002Bimfv\u002Bbzv7lGhDGBlid2Eo1pTkZNiSLsVQWVkJFWFgYGdnZygoKGAwNjZmhAphgt0XnsFd8P79\u002B/9Pnz6F47CwsP/R0dH/z549i2IhE5QGg1P3PzMsTtVgsFTiYvj27RtUFAF\u002B//7N0NfXx4BsCIoBIVoMDOaKnFg1wwDIkAkTJkB5oDBAAnFxcf/b29uhPNygsLCQYdWqVWC9KC748eMHlEU8QDGAHDBqABUMQEkHmZmZ/9\u002B\u002BfQvl4QbCwsIM06dPx50niAcMDADfJl5g9BqhpwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-11-08T10:23:02.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TaskViewModel.cs",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\TaskViewModel.cs",
+              "RelativeDocumentMoniker": "HRD\\TaskViewModel.cs",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\TaskViewModel.cs",
+              "RelativeToolTip": "HRD\\TaskViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-11-08T10:23:02.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "HRD\\MainWindow.xaml",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\MainWindow.xaml",
+              "RelativeToolTip": "HRD\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T10:23:03.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HRD\\MainWindow.xaml.cs",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\MainWindow.xaml.cs",
+              "RelativeToolTip": "HRD\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAH0AAAAAAAAAAIA3wIwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:23:04.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\Model1.edmx",
+              "RelativeDocumentMoniker": "HRD\\Model1.edmx",
+              "ToolTip": "C:\\\u0440\u043E\u0444\u043B\u0430\u043D\u044B \u043C\u043E\u0438\\4\u043A\u0443\u0440\u0441\\HRD\\HRD\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-11-08T10:23:04.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmployeeMainWindow.xaml.cs",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\EmployeeMainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HRD\\EmployeeMainWindow.xaml.cs",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\EmployeeMainWindow.xaml.cs",
+              "RelativeToolTip": "HRD\\EmployeeMainWindow.xaml.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAlwJQAAAAqAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVDhPY0AGretv/t9x7tl/KJd0sOfii/\u002Bimfv\u002Bbzv7lGhDGBlid2Eo1pTkZNiSLsVQWVkJFWFgYGdnZygoKGAwNjZmhAphgt0XnsFd8P79\u002B/9Pnz6F47CwsP/R0dH/z549i2IhE5QGg1P3PzMsTtVgsFTiYvj27RtUFAF\u002B//7N0NfXx4BsCIoBIVoMDOaKnFg1wwDIkAkTJkB5oDBAAnFxcf/b29uhPNygsLCQYdWqVWC9KC748eMHlEU8QDGAHDBqABUMQEkHmZmZ/9\u002B\u002BfQvl4QbCwsIM06dPx50niAcMDADfJl5g9BqhpwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-11-08T10:23:04.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeeMainWindow.xaml",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\EmployeeMainWindow.xaml",
+              "RelativeDocumentMoniker": "HRD\\EmployeeMainWindow.xaml",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\EmployeeMainWindow.xaml",
+              "RelativeToolTip": "HRD\\EmployeeMainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T10:23:04.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HRRequestsWindow.xaml",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\HRRequestsWindow.xaml",
+              "RelativeDocumentMoniker": "HRD\\HRRequestsWindow.xaml",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\HRRequestsWindow.xaml",
+              "RelativeToolTip": "HRD\\HRRequestsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T10:23:04.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TasksViewWindow.xaml.cs",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\TasksViewWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HRD\\TasksViewWindow.xaml.cs",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\TasksViewWindow.xaml.cs",
+              "RelativeToolTip": "HRD\\TasksViewWindow.xaml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBwAAAAYAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVDhPY0AGretv/t9x7tl/KJd0sOfii/\u002Bimfv\u002Bbzv7lGhDGBlid2Eo1pTkZNiSLsVQWVkJFWFgYGdnZygoKGAwNjZmhAphgt0XnsFd8P79\u002B/9Pnz6F47CwsP/R0dH/z549i2IhE5QGg1P3PzMsTtVgsFTiYvj27RtUFAF\u002B//7N0NfXx4BsCIoBIVoMDOaKnFg1wwDIkAkTJkB5oDBAAnFxcf/b29uhPNygsLCQYdWqVWC9KC748eMHlEU8QDGAHDBqABUMQEkHmZmZ/9\u002B\u002BfQvl4QbCwsIM06dPx50niAcMDADfJl5g9BqhpwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-11-08T10:23:04.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TaskAdminWindow.xaml.cs",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\TaskAdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HRD\\TaskAdminWindow.xaml.cs",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\TaskAdminWindow.xaml.cs",
+              "RelativeToolTip": "HRD\\TaskAdminWindow.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAlAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVDhPY0AGretv/t9x7tl/KJd0sOfii/\u002Bimfv\u002Bbzv7lGhDGBlid2Eo1pTkZNiSLsVQWVkJFWFgYGdnZygoKGAwNjZmhAphgt0XnsFd8P79\u002B/9Pnz6F47CwsP/R0dH/z549i2IhE5QGg1P3PzMsTtVgsFTiYvj27RtUFAF\u002B//7N0NfXx4BsCIoBIVoMDOaKnFg1wwDIkAkTJkB5oDBAAnFxcf/b29uhPNygsLCQYdWqVWC9KC748eMHlEU8QDGAHDBqABUMQEkHmZmZ/9\u002B\u002BfQvl4QbCwsIM06dPx50niAcMDADfJl5g9BqhpwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-11-08T10:23:04.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TaskAdminWindow.xaml",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\TaskAdminWindow.xaml",
+              "RelativeDocumentMoniker": "HRD\\TaskAdminWindow.xaml",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\TaskAdminWindow.xaml",
+              "RelativeToolTip": "HRD\\TaskAdminWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T10:23:04.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LeaveBalanceWindow.xaml.cs",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\LeaveBalanceWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HRD\\LeaveBalanceWindow.xaml.cs",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\LeaveBalanceWindow.xaml.cs",
+              "RelativeToolTip": "HRD\\LeaveBalanceWindow.xaml.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwDgAAAAJAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVDhPY0AGretv/t9x7tl/KJd0sOfii/\u002Bimfv\u002Bbzv7lGhDGBlid2Eo1pTkZNiSLsVQWVkJFWFgYGdnZygoKGAwNjZmhAphgt0XnsFd8P79\u002B/9Pnz6F47CwsP/R0dH/z549i2IhE5QGg1P3PzMsTtVgsFTiYvj27RtUFAF\u002B//7N0NfXx4BsCIoBIVoMDOaKnFg1wwDIkAkTJkB5oDBAAnFxcf/b29uhPNygsLCQYdWqVWC9KC748eMHlEU8QDGAHDBqABUMQEkHmZmZ/9\u002B\u002BfQvl4QbCwsIM06dPx50niAcMDADfJl5g9BqhpwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-11-08T10:23:04.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RequestLeaveWindow.xaml",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\RequestLeaveWindow.xaml",
+              "RelativeDocumentMoniker": "HRD\\RequestLeaveWindow.xaml",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\RequestLeaveWindow.xaml",
+              "RelativeToolTip": "HRD\\RequestLeaveWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T10:23:04.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AddLeaveRequestWindow.xaml.cs",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\AddLeaveRequestWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HRD\\AddLeaveRequestWindow.xaml.cs",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\AddLeaveRequestWindow.xaml.cs",
+              "RelativeToolTip": "HRD\\AddLeaveRequestWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAA/AAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVDhPY0AGretv/t9x7tl/KJd0sOfii/\u002Bimfv\u002Bbzv7lGhDGBlid2Eo1pTkZNiSLsVQWVkJFWFgYGdnZygoKGAwNjZmhAphgt0XnsFd8P79\u002B/9Pnz6F47CwsP/R0dH/z549i2IhE5QGg1P3PzMsTtVgsFTiYvj27RtUFAF\u002B//7N0NfXx4BsCIoBIVoMDOaKnFg1wwDIkAkTJkB5oDBAAnFxcf/b29uhPNygsLCQYdWqVWC9KC748eMHlEU8QDGAHDBqABUMQEkHmZmZ/9\u002B\u002BfQvl4QbCwsIM06dPx50niAcMDADfJl5g9BqhpwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-11-08T10:23:04.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ReportsAndStatisticsWindow.xaml.cs",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\ReportsAndStatisticsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HRD\\ReportsAndStatisticsWindow.xaml.cs",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\ReportsAndStatisticsWindow.xaml.cs",
+              "RelativeToolTip": "HRD\\ReportsAndStatisticsWindow.xaml.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAD4vywAAAAVAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVDhPY0AGretv/t9x7tl/KJd0sOfii/\u002Bimfv\u002Bbzv7lGhDGBlid2Eo1pTkZNiSLsVQWVkJFWFgYGdnZygoKGAwNjZmhAphgt0XnsFd8P79\u002B/9Pnz6F47CwsP/R0dH/z549i2IhE5QGg1P3PzMsTtVgsFTiYvj27RtUFAF\u002B//7N0NfXx4BsCIoBIVoMDOaKnFg1wwDIkAkTJkB5oDBAAnFxcf/b29uhPNygsLCQYdWqVWC9KC748eMHlEU8QDGAHDBqABUMQEkHmZmZ/9\u002B\u002BfQvl4QbCwsIM06dPx50niAcMDADfJl5g9BqhpwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-11-08T10:23:04.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AddEditTaskWindow.xaml",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\AddEditTaskWindow.xaml",
+              "RelativeDocumentMoniker": "HRD\\AddEditTaskWindow.xaml",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\AddEditTaskWindow.xaml",
+              "RelativeToolTip": "HRD\\AddEditTaskWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T10:23:04.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AddEditTaskWindow.xaml.cs",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\AddEditTaskWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HRD\\AddEditTaskWindow.xaml.cs",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\AddEditTaskWindow.xaml.cs",
+              "RelativeToolTip": "HRD\\AddEditTaskWindow.xaml.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwAcAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVDhPY0AGretv/t9x7tl/KJd0sOfii/\u002Bimfv\u002Bbzv7lGhDGBlid2Eo1pTkZNiSLsVQWVkJFWFgYGdnZygoKGAwNjZmhAphgt0XnsFd8P79\u002B/9Pnz6F47CwsP/R0dH/z549i2IhE5QGg1P3PzMsTtVgsFTiYvj27RtUFAF\u002B//7N0NfXx4BsCIoBIVoMDOaKnFg1wwDIkAkTJkB5oDBAAnFxcf/b29uhPNygsLCQYdWqVWC9KC748eMHlEU8QDGAHDBqABUMQEkHmZmZ/9\u002B\u002BfQvl4QbCwsIM06dPx50niAcMDADfJl5g9BqhpwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-11-08T10:23:04.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LeaveBalanceWindow.xaml",
+              "DocumentMoniker": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\LeaveBalanceWindow.xaml",
+              "RelativeDocumentMoniker": "HRD\\LeaveBalanceWindow.xaml",
+              "ToolTip": "F:\\\u043A\u0443\u0440\u0441\u0430\u0447\\HRD\\HRD\\LeaveBalanceWindow.xaml",
+              "RelativeToolTip": "HRD\\LeaveBalanceWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T10:23:04.305Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

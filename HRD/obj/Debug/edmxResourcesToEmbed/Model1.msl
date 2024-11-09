@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище user96_dbModelContainer" CdmEntityContainer="user96_dbEntities1">
+    <EntitySetMapping Name="KU_Contacts">
+      <EntityTypeMapping TypeName="user96_dbModel.KU_Contacts">
+        <MappingFragment StoreEntitySet="KU_Contacts">
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KU_Education">
+      <EntityTypeMapping TypeName="user96_dbModel.KU_Education">
+        <MappingFragment StoreEntitySet="KU_Education">
+          <ScalarProperty Name="EducationID" ColumnName="EducationID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Degree" ColumnName="Degree" />
+          <ScalarProperty Name="Institution" ColumnName="Institution" />
+          <ScalarProperty Name="GraduationYear" ColumnName="GraduationYear" />
+          <ScalarProperty Name="Specialization" ColumnName="Specialization" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KU_EmployeeChildren">
+      <EntityTypeMapping TypeName="user96_dbModel.KU_EmployeeChildren">
+        <MappingFragment StoreEntitySet="KU_EmployeeChildren">
+          <ScalarProperty Name="ChildID" ColumnName="ChildID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="ChildName" ColumnName="ChildName" />
+          <ScalarProperty Name="BirthYear" ColumnName="BirthYear" />
+          <ScalarProperty Name="School" ColumnName="School" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KU_EmployeeProfessionalData">
+      <EntityTypeMapping TypeName="user96_dbModel.KU_EmployeeProfessionalData">
+        <MappingFragment StoreEntitySet="KU_EmployeeProfessionalData">
+          <ScalarProperty Name="ProfessionalDataID" ColumnName="ProfessionalDataID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Specialization" ColumnName="Specialization" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="HireDate" ColumnName="HireDate" />
+          <ScalarProperty Name="TotalExperience" ColumnName="TotalExperience" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KU_Employees">
+      <EntityTypeMapping TypeName="user96_dbModel.KU_Employees">
+        <MappingFragment StoreEntitySet="KU_Employees">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+          <ScalarProperty Name="PlaceOfResidence" ColumnName="PlaceOfResidence" />
+          <ScalarProperty Name="PlaceOfRegistration" ColumnName="PlaceOfRegistration" />
+          <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+          <ScalarProperty Name="ChildrenCount" ColumnName="ChildrenCount" />
+          <ScalarProperty Name="EmploymentStatus" ColumnName="EmploymentStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KU_Roles">
+      <EntityTypeMapping TypeName="user96_dbModel.KU_Roles">
+        <MappingFragment StoreEntitySet="KU_Roles">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KU_SalaryHistory">
+      <EntityTypeMapping TypeName="user96_dbModel.KU_SalaryHistory">
+        <MappingFragment StoreEntitySet="KU_SalaryHistory">
+          <ScalarProperty Name="SalaryID" ColumnName="SalaryID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="SalaryAmount" ColumnName="SalaryAmount" />
+          <ScalarProperty Name="SalaryDate" ColumnName="SalaryDate" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KU_Users">
+      <EntityTypeMapping TypeName="user96_dbModel.KU_Users">
+        <MappingFragment StoreEntitySet="KU_Users">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KU_EmployeeOfTheMonth">
+      <EntityTypeMapping TypeName="user96_dbModel.KU_EmployeeOfTheMonth">
+        <MappingFragment StoreEntitySet="KU_EmployeeOfTheMonth">
+          <ScalarProperty Name="MonthAssigned" ColumnName="MonthAssigned" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EmployeeOfTheMonthID" ColumnName="EmployeeOfTheMonthID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KU_Tasks">
+      <EntityTypeMapping TypeName="user96_dbModel.KU_Tasks">
+        <MappingFragment StoreEntitySet="KU_Tasks">
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsCompleted" ColumnName="IsCompleted" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KU_LeaveBalance">
+      <EntityTypeMapping TypeName="user96_dbModel.KU_LeaveBalance">
+        <MappingFragment StoreEntitySet="KU_LeaveBalance">
+          <ScalarProperty Name="RemainingLeaveDays" ColumnName="RemainingLeaveDays" />
+          <ScalarProperty Name="UsedLeaveDays" ColumnName="UsedLeaveDays" />
+          <ScalarProperty Name="TotalLeaveDays" ColumnName="TotalLeaveDays" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KU_LeaveRequests">
+      <EntityTypeMapping TypeName="user96_dbModel.KU_LeaveRequests">
+        <MappingFragment StoreEntitySet="KU_LeaveRequests">
+          <ScalarProperty Name="IsNotified" ColumnName="IsNotified" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KU_HRRequests">
+      <EntityTypeMapping TypeName="user96_dbModel.KU_HRRequests">
+        <MappingFragment StoreEntitySet="KU_HRRequests">
+          <ScalarProperty Name="Response" ColumnName="Response" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

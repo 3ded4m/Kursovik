@@ -1,0 +1,23 @@
+﻿<Window x:Class="HRD.EditSalaryRecordWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редактировать запись о зарплате" Width="400" Height="350"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="Сотрудник" FontSize="16"/>
+            <TextBlock x:Name="EmployeeTextBlock" Width="300" Margin="0,5,0,15"/>
+
+            <TextBlock Text="Сумма зарплаты" FontSize="16"/>
+            <TextBox x:Name="SalaryAmountTextBox" Width="300" Margin="0,5,0,15"/>
+
+            <TextBlock Text="Дата выплаты" FontSize="16"/>
+            <DatePicker x:Name="SalaryDatePicker" Width="300" Margin="0,5,0,15"/>
+
+            <TextBlock Text="Комментарий" FontSize="16"/>
+            <TextBox x:Name="NoteTextBox" Width="300" Margin="0,5,0,15"/>
+
+            <Button Content="Сохранить" Width="100" HorizontalAlignment="Right" Click="SaveSalaryRecordButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

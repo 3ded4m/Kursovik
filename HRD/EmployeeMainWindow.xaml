@@ -1,0 +1,40 @@
+﻿<Window x:Class="HRD.EmployeeMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Главное окно сотрудника" Width="800" Height="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <!-- Верхняя панель с приветствием и информацией о сотруднике -->
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="80" Background="#e3eaf5" Margin="0,0,0,10">
+            <TextBlock Text="Добро пожаловать," FontSize="16" Foreground="#333333" Margin="10,0,0,0"/>
+            <TextBlock x:Name="EmployeeNameTextBlock" FontSize="18" FontWeight="Bold" Foreground="#333333" Margin="5,0,0,0"/>
+        </StackPanel>
+
+        <!-- Секция "Работник месяца" с уведомлением -->
+        <Border BorderBrush="Gray" BorderThickness="1" Margin="0,100,0,10" Padding="10">
+            <StackPanel>
+                <TextBlock Text="Работник месяца" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="EmployeeOfTheMonthTextBlock" FontSize="16" Margin="0,10,0,0" TextAlignment="Center"/>
+
+                <!-- Блок для уведомлений -->
+                <TextBlock x:Name="NotificationTextBlock" FontSize="14" Foreground="Red" Margin="0,10,0,0" Visibility="Collapsed" TextAlignment="Center"/>
+            </StackPanel>
+        </Border>
+
+
+
+        <!-- Кнопки действий -->
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,251,0,0" Height="285">
+            <Button Content="Мои обращения" Width="200" Height="40" Background="#4CAF50" Foreground="White" Margin="0,10,0,0" Click="ViewHRRequests_Click"/>
+            <Button Content="Просмотр отпускных дней" Width="200" Height="40" Background="#4CAF50" Foreground="White" Margin="0,10,0,0" Click="ViewLeaveBalance_Click"/>
+            <Button Content="Посмотреть историю зарплат" Background="#4CAF50" Foreground="White" Width="200" Height="40" Margin="0,10,0,0" Click="ViewSalaryHistory_Click"/>
+            <Button Content="Просмотр задач" Background="#4CAF50" Foreground="White" Width="200" Height="40" Margin="0,10,0,0" Click="ViewTasks_Click"/>
+        </StackPanel>
+
+        <!-- Кнопки "Назад" и "Выход" в левом нижнем углу -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10">
+            <Button Content="Назад" Width="80" Height="30" Background="#2196F3" Foreground="White" FontSize="14" Margin="0,0,10,0" Click="BackButton_Click"/>
+            <Button Content="Выход" Width="80" Height="30" Background="#f44336" Foreground="White" FontSize="14" Click="ExitButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

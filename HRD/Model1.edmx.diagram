@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a027a111fcf34a85af70166a5092ebd3" Name="Diagram1">
+        <EntityTypeShape EntityType="user96_dbModel.KU_Contacts" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="user96_dbModel.KU_Education" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="user96_dbModel.KU_EmployeeChildren" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="user96_dbModel.KU_EmployeeProfessionalData" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="user96_dbModel.KU_Employees" Width="1.5" PointX="0.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="user96_dbModel.KU_Roles" Width="1.5" PointX="3.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="user96_dbModel.KU_SalaryHistory" Width="1.5" PointX="3" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="user96_dbModel.KU_Users" Width="1.5" PointX="6" PointY="12.5" IsExpanded="true" />
+        <AssociationConnector Association="user96_dbModel.FK__KU_Contac__Emplo__1D1C38C9" ManuallyRouted="false" />
+        <AssociationConnector Association="user96_dbModel.FK__KU_Educat__Emplo__1A3FCC1E" ManuallyRouted="false" />
+        <AssociationConnector Association="user96_dbModel.FK__KU_Employ__Emplo__17635F73" ManuallyRouted="false" />
+        <AssociationConnector Association="user96_dbModel.FK__KU_Employ__Emplo__1486F2C8" ManuallyRouted="false" />
+        <AssociationConnector Association="user96_dbModel.FK__KU_Salary__Emplo__2799C73C" ManuallyRouted="false" />
+        <AssociationConnector Association="user96_dbModel.FK__KU_Users__Employ__23C93658" ManuallyRouted="false" />
+        <AssociationConnector Association="user96_dbModel.FK__KU_Users__RoleID__24BD5A91" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="user96_dbModel.KU_EmployeeOfTheMonth" Width="1.5" PointX="3" PointY="24.875" />
+        <AssociationConnector Association="user96_dbModel.FK__KU_Employ__Emplo__321755AF" />
+        <EntityTypeShape EntityType="user96_dbModel.KU_Tasks" Width="1.5" PointX="3" PointY="27.375" />
+        <AssociationConnector Association="user96_dbModel.FK__KU_Tasks__Employ__34F3C25A" />
+        <EntityTypeShape EntityType="user96_dbModel.KU_LeaveBalance" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="user96_dbModel.KU_LeaveRequests" Width="1.5" PointX="3" PointY="16.625" />
+        <AssociationConnector Association="user96_dbModel.FK__KU_LeaveR__Emplo__3BA0BFE9" />
+        <EntityTypeShape EntityType="user96_dbModel.KU_HRRequests" Width="1.5" PointX="3" PointY="31.625" />
+        <AssociationConnector Association="user96_dbModel.FK__KU_HRRequ__Emplo__4159993F" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

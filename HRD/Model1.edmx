@@ -1,0 +1,901 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Хранилище user96_dbModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="KU_Contacts">
+          <Key>
+            <PropertyRef Name="ContactID" />
+          </Key>
+          <Property Name="ContactID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="20" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="AddressType" Type="nvarchar" MaxLength="20" />
+          <Property Name="Address" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="KU_Education">
+          <Key>
+            <PropertyRef Name="EducationID" />
+          </Key>
+          <Property Name="EducationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="Degree" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Institution" Type="nvarchar" MaxLength="100" />
+          <Property Name="GraduationYear" Type="int" />
+          <Property Name="Specialization" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="KU_EmployeeChildren">
+          <Key>
+            <PropertyRef Name="ChildID" />
+          </Key>
+          <Property Name="ChildID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="ChildName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="BirthYear" Type="int" />
+          <Property Name="School" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="KU_EmployeeOfTheMonth">
+          <Key>
+            <PropertyRef Name="EmployeeOfTheMonthID" />
+          </Key>
+          <Property Name="EmployeeOfTheMonthID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeID" Type="int" Nullable="false" />
+          <Property Name="MonthAssigned" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KU_EmployeeProfessionalData">
+          <Key>
+            <PropertyRef Name="ProfessionalDataID" />
+          </Key>
+          <Property Name="ProfessionalDataID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="Position" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Specialization" Type="nvarchar" MaxLength="100" />
+          <Property Name="Qualification" Type="nvarchar" MaxLength="50" />
+          <Property Name="HireDate" Type="date" />
+          <Property Name="TotalExperience" Type="int" />
+        </EntityType>
+        <EntityType Name="KU_Employees">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="50" />
+          <Property Name="DateOfBirth" Type="date" Nullable="false" />
+          <Property Name="PassportNumber" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="PlaceOfResidence" Type="nvarchar" MaxLength="100" />
+          <Property Name="PlaceOfRegistration" Type="nvarchar" MaxLength="100" />
+          <Property Name="MaritalStatus" Type="nvarchar" MaxLength="20" />
+          <Property Name="ChildrenCount" Type="int" />
+          <Property Name="EmploymentStatus" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="KU_HRRequests">
+          <Key>
+            <PropertyRef Name="RequestID" />
+          </Key>
+          <Property Name="RequestID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="Subject" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RequestDate" Type="date" />
+          <Property Name="Response" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="KU_LeaveBalance">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="int" Nullable="false" />
+          <Property Name="TotalLeaveDays" Type="int" Nullable="false" />
+          <Property Name="UsedLeaveDays" Type="int" Nullable="false" />
+          <Property Name="RemainingLeaveDays" Type="int" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="KU_LeaveRequests">
+          <Key>
+            <PropertyRef Name="RequestID" />
+          </Key>
+          <Property Name="RequestID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="StartDate" Type="date" Nullable="false" />
+          <Property Name="EndDate" Type="date" Nullable="false" />
+          <Property Name="Status" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="RequestDate" Type="date" />
+          <Property Name="IsNotified" Type="bit" />
+        </EntityType>
+        <EntityType Name="KU_Roles">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RoleName" Type="nvarchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KU_SalaryHistory">
+          <Key>
+            <PropertyRef Name="SalaryID" />
+          </Key>
+          <Property Name="SalaryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="SalaryAmount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="SalaryDate" Type="date" Nullable="false" />
+          <Property Name="Note" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="KU_Tasks">
+          <Key>
+            <PropertyRef Name="TaskID" />
+          </Key>
+          <Property Name="TaskID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="Title" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="DueDate" Type="date" />
+          <Property Name="IsCompleted" Type="bit" />
+          <Property Name="CreatedAt" Type="datetime" />
+          <Property Name="UpdatedAt" Type="datetime" />
+        </EntityType>
+        <EntityType Name="KU_Users">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RoleID" Type="int" />
+        </EntityType>
+        <Association Name="FK__KU_Contac__Emplo__1D1C38C9">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KU_Contacts" Type="Self.KU_Contacts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_Contacts">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_Educat__Emplo__1A3FCC1E">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KU_Education" Type="Self.KU_Education" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_Education">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_Employ__Emplo__1486F2C8">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KU_EmployeeProfessionalData" Type="Self.KU_EmployeeProfessionalData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_EmployeeProfessionalData">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_Employ__Emplo__17635F73">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KU_EmployeeChildren" Type="Self.KU_EmployeeChildren" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_EmployeeChildren">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_Employ__Emplo__321755AF">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="1" />
+          <End Role="KU_EmployeeOfTheMonth" Type="Self.KU_EmployeeOfTheMonth" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_EmployeeOfTheMonth">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_HRRequ__Emplo__4159993F">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1" />
+          <End Role="KU_HRRequests" Type="Self.KU_HRRequests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_HRRequests">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_LeaveR__Emplo__3BA0BFE9">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1" />
+          <End Role="KU_LeaveRequests" Type="Self.KU_LeaveRequests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_LeaveRequests">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_Salary__Emplo__2799C73C">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1" />
+          <End Role="KU_SalaryHistory" Type="Self.KU_SalaryHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_SalaryHistory">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_Tasks__Employ__34F3C25A">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1" />
+          <End Role="KU_Tasks" Type="Self.KU_Tasks" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_Tasks">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_Users__Employ__23C93658">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KU_Users" Type="Self.KU_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_Users">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_Users__RoleID__24BD5A91">
+          <End Role="KU_Roles" Type="Self.KU_Roles" Multiplicity="0..1" />
+          <End Role="KU_Users" Type="Self.KU_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Roles">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="KU_Users">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище user96_dbModelContainer">
+          <EntitySet Name="KU_Contacts" EntityType="Self.KU_Contacts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KU_Education" EntityType="Self.KU_Education" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KU_EmployeeChildren" EntityType="Self.KU_EmployeeChildren" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KU_EmployeeOfTheMonth" EntityType="Self.KU_EmployeeOfTheMonth" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KU_EmployeeProfessionalData" EntityType="Self.KU_EmployeeProfessionalData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KU_Employees" EntityType="Self.KU_Employees" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KU_HRRequests" EntityType="Self.KU_HRRequests" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KU_LeaveBalance" EntityType="Self.KU_LeaveBalance" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KU_LeaveRequests" EntityType="Self.KU_LeaveRequests" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KU_Roles" EntityType="Self.KU_Roles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KU_SalaryHistory" EntityType="Self.KU_SalaryHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KU_Tasks" EntityType="Self.KU_Tasks" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KU_Users" EntityType="Self.KU_Users" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__KU_Contac__Emplo__1D1C38C9" Association="Self.FK__KU_Contac__Emplo__1D1C38C9">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_Contacts" EntitySet="KU_Contacts" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_Educat__Emplo__1A3FCC1E" Association="Self.FK__KU_Educat__Emplo__1A3FCC1E">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_Education" EntitySet="KU_Education" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_Employ__Emplo__1486F2C8" Association="Self.FK__KU_Employ__Emplo__1486F2C8">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_EmployeeProfessionalData" EntitySet="KU_EmployeeProfessionalData" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_Employ__Emplo__17635F73" Association="Self.FK__KU_Employ__Emplo__17635F73">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_EmployeeChildren" EntitySet="KU_EmployeeChildren" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_Employ__Emplo__321755AF" Association="Self.FK__KU_Employ__Emplo__321755AF">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_EmployeeOfTheMonth" EntitySet="KU_EmployeeOfTheMonth" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_HRRequ__Emplo__4159993F" Association="Self.FK__KU_HRRequ__Emplo__4159993F">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_HRRequests" EntitySet="KU_HRRequests" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_LeaveR__Emplo__3BA0BFE9" Association="Self.FK__KU_LeaveR__Emplo__3BA0BFE9">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_LeaveRequests" EntitySet="KU_LeaveRequests" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_Salary__Emplo__2799C73C" Association="Self.FK__KU_Salary__Emplo__2799C73C">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_SalaryHistory" EntitySet="KU_SalaryHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_Tasks__Employ__34F3C25A" Association="Self.FK__KU_Tasks__Employ__34F3C25A">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_Tasks" EntitySet="KU_Tasks" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_Users__Employ__23C93658" Association="Self.FK__KU_Users__Employ__23C93658">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_Users" EntitySet="KU_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_Users__RoleID__24BD5A91" Association="Self.FK__KU_Users__RoleID__24BD5A91">
+            <End Role="KU_Roles" EntitySet="KU_Roles" />
+            <End Role="KU_Users" EntitySet="KU_Users" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="user96_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="KU_Contacts">
+          <Key>
+            <PropertyRef Name="ContactID" />
+          </Key>
+          <Property Name="ContactID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="Int32" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AddressType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="KU_Employees" Relationship="Self.FK__KU_Contac__Emplo__1D1C38C9" FromRole="KU_Contacts" ToRole="KU_Employees" />
+        </EntityType>
+        <EntityType Name="KU_Education">
+          <Key>
+            <PropertyRef Name="EducationID" />
+          </Key>
+          <Property Name="EducationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="Int32" />
+          <Property Name="Degree" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Institution" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="GraduationYear" Type="Int32" />
+          <Property Name="Specialization" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="KU_Employees" Relationship="Self.FK__KU_Educat__Emplo__1A3FCC1E" FromRole="KU_Education" ToRole="KU_Employees" />
+        </EntityType>
+        <EntityType Name="KU_EmployeeChildren">
+          <Key>
+            <PropertyRef Name="ChildID" />
+          </Key>
+          <Property Name="ChildID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="Int32" />
+          <Property Name="ChildName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BirthYear" Type="Int32" />
+          <Property Name="School" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="KU_Employees" Relationship="Self.FK__KU_Employ__Emplo__17635F73" FromRole="KU_EmployeeChildren" ToRole="KU_Employees" />
+        </EntityType>
+        <EntityType Name="KU_EmployeeProfessionalData">
+          <Key>
+            <PropertyRef Name="ProfessionalDataID" />
+          </Key>
+          <Property Name="ProfessionalDataID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="Int32" />
+          <Property Name="Position" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Specialization" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Qualification" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HireDate" Type="DateTime" Precision="0" />
+          <Property Name="TotalExperience" Type="Int32" />
+          <NavigationProperty Name="KU_Employees" Relationship="Self.FK__KU_Employ__Emplo__1486F2C8" FromRole="KU_EmployeeProfessionalData" ToRole="KU_Employees" />
+        </EntityType>
+        <EntityType Name="KU_Employees">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="PassportNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PlaceOfResidence" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PlaceOfRegistration" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MaritalStatus" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ChildrenCount" Type="Int32" />
+          <Property Name="EmploymentStatus" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="KU_Contacts" Relationship="Self.FK__KU_Contac__Emplo__1D1C38C9" FromRole="KU_Employees" ToRole="KU_Contacts" />
+          <NavigationProperty Name="KU_Education" Relationship="Self.FK__KU_Educat__Emplo__1A3FCC1E" FromRole="KU_Employees" ToRole="KU_Education" />
+          <NavigationProperty Name="KU_EmployeeChildren" Relationship="Self.FK__KU_Employ__Emplo__17635F73" FromRole="KU_Employees" ToRole="KU_EmployeeChildren" />
+          <NavigationProperty Name="KU_EmployeeProfessionalData" Relationship="Self.FK__KU_Employ__Emplo__1486F2C8" FromRole="KU_Employees" ToRole="KU_EmployeeProfessionalData" />
+          <NavigationProperty Name="KU_SalaryHistory" Relationship="Self.FK__KU_Salary__Emplo__2799C73C" FromRole="KU_Employees" ToRole="KU_SalaryHistory" />
+          <NavigationProperty Name="KU_Users" Relationship="Self.FK__KU_Users__Employ__23C93658" FromRole="KU_Employees" ToRole="KU_Users" />
+          <NavigationProperty Name="KU_EmployeeOfTheMonth" Relationship="user96_dbModel.FK__KU_Employ__Emplo__321755AF" FromRole="KU_Employees" ToRole="KU_EmployeeOfTheMonth" />
+          <NavigationProperty Name="KU_Tasks" Relationship="user96_dbModel.FK__KU_Tasks__Employ__34F3C25A" FromRole="KU_Employees" ToRole="KU_Tasks" />
+          <NavigationProperty Name="KU_LeaveRequests" Relationship="user96_dbModel.FK__KU_LeaveR__Emplo__3BA0BFE9" FromRole="KU_Employees" ToRole="KU_LeaveRequests" />
+          <NavigationProperty Name="KU_HRRequests" Relationship="user96_dbModel.FK__KU_HRRequ__Emplo__4159993F" FromRole="KU_Employees" ToRole="KU_HRRequests" />
+        </EntityType>
+        <EntityType Name="KU_Roles">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoleName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="KU_Users" Relationship="Self.FK__KU_Users__RoleID__24BD5A91" FromRole="KU_Roles" ToRole="KU_Users" />
+        </EntityType>
+        <EntityType Name="KU_SalaryHistory">
+          <Key>
+            <PropertyRef Name="SalaryID" />
+          </Key>
+          <Property Name="SalaryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="Int32" />
+          <Property Name="SalaryAmount" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="SalaryDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="KU_Employees" Relationship="Self.FK__KU_Salary__Emplo__2799C73C" FromRole="KU_SalaryHistory" ToRole="KU_Employees" />
+        </EntityType>
+        <EntityType Name="KU_Users">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="Int32" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RoleID" Type="Int32" />
+          <NavigationProperty Name="KU_Employees" Relationship="Self.FK__KU_Users__Employ__23C93658" FromRole="KU_Users" ToRole="KU_Employees" />
+          <NavigationProperty Name="KU_Roles" Relationship="Self.FK__KU_Users__RoleID__24BD5A91" FromRole="KU_Users" ToRole="KU_Roles" />
+        </EntityType>
+        <Association Name="FK__KU_Contac__Emplo__1D1C38C9">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KU_Contacts" Type="Self.KU_Contacts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_Contacts">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_Educat__Emplo__1A3FCC1E">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KU_Education" Type="Self.KU_Education" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_Education">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_Employ__Emplo__17635F73">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KU_EmployeeChildren" Type="Self.KU_EmployeeChildren" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_EmployeeChildren">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_Employ__Emplo__1486F2C8">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KU_EmployeeProfessionalData" Type="Self.KU_EmployeeProfessionalData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_EmployeeProfessionalData">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_Salary__Emplo__2799C73C">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1" />
+          <End Role="KU_SalaryHistory" Type="Self.KU_SalaryHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_SalaryHistory">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_Users__Employ__23C93658">
+          <End Role="KU_Employees" Type="Self.KU_Employees" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KU_Users" Type="Self.KU_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_Users">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__KU_Users__RoleID__24BD5A91">
+          <End Role="KU_Roles" Type="Self.KU_Roles" Multiplicity="0..1" />
+          <End Role="KU_Users" Type="Self.KU_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Roles">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="KU_Users">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="user96_dbEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="KU_Contacts" EntityType="Self.KU_Contacts" />
+          <EntitySet Name="KU_Education" EntityType="Self.KU_Education" />
+          <EntitySet Name="KU_EmployeeChildren" EntityType="Self.KU_EmployeeChildren" />
+          <EntitySet Name="KU_EmployeeProfessionalData" EntityType="Self.KU_EmployeeProfessionalData" />
+          <EntitySet Name="KU_Employees" EntityType="Self.KU_Employees" />
+          <EntitySet Name="KU_Roles" EntityType="Self.KU_Roles" />
+          <EntitySet Name="KU_SalaryHistory" EntityType="Self.KU_SalaryHistory" />
+          <EntitySet Name="KU_Users" EntityType="Self.KU_Users" />
+          <AssociationSet Name="FK__KU_Contac__Emplo__1D1C38C9" Association="Self.FK__KU_Contac__Emplo__1D1C38C9">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_Contacts" EntitySet="KU_Contacts" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_Educat__Emplo__1A3FCC1E" Association="Self.FK__KU_Educat__Emplo__1A3FCC1E">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_Education" EntitySet="KU_Education" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_Employ__Emplo__17635F73" Association="Self.FK__KU_Employ__Emplo__17635F73">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_EmployeeChildren" EntitySet="KU_EmployeeChildren" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_Employ__Emplo__1486F2C8" Association="Self.FK__KU_Employ__Emplo__1486F2C8">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_EmployeeProfessionalData" EntitySet="KU_EmployeeProfessionalData" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_Salary__Emplo__2799C73C" Association="Self.FK__KU_Salary__Emplo__2799C73C">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_SalaryHistory" EntitySet="KU_SalaryHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_Users__Employ__23C93658" Association="Self.FK__KU_Users__Employ__23C93658">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_Users" EntitySet="KU_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__KU_Users__RoleID__24BD5A91" Association="Self.FK__KU_Users__RoleID__24BD5A91">
+            <End Role="KU_Roles" EntitySet="KU_Roles" />
+            <End Role="KU_Users" EntitySet="KU_Users" />
+          </AssociationSet>
+          <EntitySet Name="KU_EmployeeOfTheMonth" EntityType="user96_dbModel.KU_EmployeeOfTheMonth" />
+          <AssociationSet Name="FK__KU_Employ__Emplo__321755AF" Association="user96_dbModel.FK__KU_Employ__Emplo__321755AF">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_EmployeeOfTheMonth" EntitySet="KU_EmployeeOfTheMonth" />
+          </AssociationSet>
+          <EntitySet Name="KU_Tasks" EntityType="user96_dbModel.KU_Tasks" />
+          <AssociationSet Name="FK__KU_Tasks__Employ__34F3C25A" Association="user96_dbModel.FK__KU_Tasks__Employ__34F3C25A">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_Tasks" EntitySet="KU_Tasks" />
+          </AssociationSet>
+          <EntitySet Name="KU_LeaveBalance" EntityType="user96_dbModel.KU_LeaveBalance" />
+          <EntitySet Name="KU_LeaveRequests" EntityType="user96_dbModel.KU_LeaveRequests" />
+          <AssociationSet Name="FK__KU_LeaveR__Emplo__3BA0BFE9" Association="user96_dbModel.FK__KU_LeaveR__Emplo__3BA0BFE9">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_LeaveRequests" EntitySet="KU_LeaveRequests" />
+          </AssociationSet>
+          <EntitySet Name="KU_HRRequests" EntityType="user96_dbModel.KU_HRRequests" />
+          <AssociationSet Name="FK__KU_HRRequ__Emplo__4159993F" Association="user96_dbModel.FK__KU_HRRequ__Emplo__4159993F">
+            <End Role="KU_Employees" EntitySet="KU_Employees" />
+            <End Role="KU_HRRequests" EntitySet="KU_HRRequests" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="KU_EmployeeOfTheMonth">
+          <Key>
+            <PropertyRef Name="EmployeeOfTheMonthID" />
+          </Key>
+          <Property Name="EmployeeOfTheMonthID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+          <Property Name="MonthAssigned" Type="DateTime" Nullable="false" Precision="0" />
+          <NavigationProperty Name="KU_Employees" Relationship="user96_dbModel.FK__KU_Employ__Emplo__321755AF" FromRole="KU_EmployeeOfTheMonth" ToRole="KU_Employees" />
+        </EntityType>
+        <Association Name="FK__KU_Employ__Emplo__321755AF">
+          <End Type="user96_dbModel.KU_Employees" Role="KU_Employees" Multiplicity="1" />
+          <End Type="user96_dbModel.KU_EmployeeOfTheMonth" Role="KU_EmployeeOfTheMonth" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_EmployeeOfTheMonth">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="KU_Tasks">
+          <Key>
+            <PropertyRef Name="TaskID" />
+          </Key>
+          <Property Name="TaskID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="Int32" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DueDate" Type="DateTime" Precision="0" />
+          <Property Name="IsCompleted" Type="Boolean" />
+          <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+          <Property Name="UpdatedAt" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="KU_Employees" Relationship="user96_dbModel.FK__KU_Tasks__Employ__34F3C25A" FromRole="KU_Tasks" ToRole="KU_Employees" />
+        </EntityType>
+        <Association Name="FK__KU_Tasks__Employ__34F3C25A">
+          <End Type="user96_dbModel.KU_Employees" Role="KU_Employees" Multiplicity="0..1" />
+          <End Type="user96_dbModel.KU_Tasks" Role="KU_Tasks" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_Tasks">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="KU_LeaveBalance">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+          <Property Name="TotalLeaveDays" Type="Int32" Nullable="false" />
+          <Property Name="UsedLeaveDays" Type="Int32" Nullable="false" />
+          <Property Name="RemainingLeaveDays" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="KU_LeaveRequests">
+          <Key>
+            <PropertyRef Name="RequestID" />
+          </Key>
+          <Property Name="RequestID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="Int32" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="RequestDate" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="KU_Employees" Relationship="user96_dbModel.FK__KU_LeaveR__Emplo__3BA0BFE9" FromRole="KU_LeaveRequests" ToRole="KU_Employees" />
+          <Property Name="IsNotified" Type="Boolean" />
+        </EntityType>
+        <Association Name="FK__KU_LeaveR__Emplo__3BA0BFE9">
+          <End Type="user96_dbModel.KU_Employees" Role="KU_Employees" Multiplicity="0..1" />
+          <End Type="user96_dbModel.KU_LeaveRequests" Role="KU_LeaveRequests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_LeaveRequests">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="KU_HRRequests">
+          <Key>
+            <PropertyRef Name="RequestID" />
+          </Key>
+          <Property Name="RequestID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeID" Type="Int32" />
+          <Property Name="Subject" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RequestDate" Type="DateTime" Precision="0" />
+          <Property Name="Response" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="KU_Employees" Relationship="user96_dbModel.FK__KU_HRRequ__Emplo__4159993F" FromRole="KU_HRRequests" ToRole="KU_Employees" />
+        </EntityType>
+        <Association Name="FK__KU_HRRequ__Emplo__4159993F">
+          <End Type="user96_dbModel.KU_Employees" Role="KU_Employees" Multiplicity="0..1" />
+          <End Type="user96_dbModel.KU_HRRequests" Role="KU_HRRequests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KU_Employees">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="KU_HRRequests">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище user96_dbModelContainer" CdmEntityContainer="user96_dbEntities1">
+          <EntitySetMapping Name="KU_Contacts">
+            <EntityTypeMapping TypeName="user96_dbModel.KU_Contacts">
+              <MappingFragment StoreEntitySet="KU_Contacts">
+                <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="AddressType" ColumnName="AddressType" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KU_Education">
+            <EntityTypeMapping TypeName="user96_dbModel.KU_Education">
+              <MappingFragment StoreEntitySet="KU_Education">
+                <ScalarProperty Name="EducationID" ColumnName="EducationID" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="Degree" ColumnName="Degree" />
+                <ScalarProperty Name="Institution" ColumnName="Institution" />
+                <ScalarProperty Name="GraduationYear" ColumnName="GraduationYear" />
+                <ScalarProperty Name="Specialization" ColumnName="Specialization" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KU_EmployeeChildren">
+            <EntityTypeMapping TypeName="user96_dbModel.KU_EmployeeChildren">
+              <MappingFragment StoreEntitySet="KU_EmployeeChildren">
+                <ScalarProperty Name="ChildID" ColumnName="ChildID" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="ChildName" ColumnName="ChildName" />
+                <ScalarProperty Name="BirthYear" ColumnName="BirthYear" />
+                <ScalarProperty Name="School" ColumnName="School" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KU_EmployeeProfessionalData">
+            <EntityTypeMapping TypeName="user96_dbModel.KU_EmployeeProfessionalData">
+              <MappingFragment StoreEntitySet="KU_EmployeeProfessionalData">
+                <ScalarProperty Name="ProfessionalDataID" ColumnName="ProfessionalDataID" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="Specialization" ColumnName="Specialization" />
+                <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+                <ScalarProperty Name="HireDate" ColumnName="HireDate" />
+                <ScalarProperty Name="TotalExperience" ColumnName="TotalExperience" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KU_Employees">
+            <EntityTypeMapping TypeName="user96_dbModel.KU_Employees">
+              <MappingFragment StoreEntitySet="KU_Employees">
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+                <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+                <ScalarProperty Name="PlaceOfResidence" ColumnName="PlaceOfResidence" />
+                <ScalarProperty Name="PlaceOfRegistration" ColumnName="PlaceOfRegistration" />
+                <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+                <ScalarProperty Name="ChildrenCount" ColumnName="ChildrenCount" />
+                <ScalarProperty Name="EmploymentStatus" ColumnName="EmploymentStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KU_Roles">
+            <EntityTypeMapping TypeName="user96_dbModel.KU_Roles">
+              <MappingFragment StoreEntitySet="KU_Roles">
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KU_SalaryHistory">
+            <EntityTypeMapping TypeName="user96_dbModel.KU_SalaryHistory">
+              <MappingFragment StoreEntitySet="KU_SalaryHistory">
+                <ScalarProperty Name="SalaryID" ColumnName="SalaryID" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="SalaryAmount" ColumnName="SalaryAmount" />
+                <ScalarProperty Name="SalaryDate" ColumnName="SalaryDate" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KU_Users">
+            <EntityTypeMapping TypeName="user96_dbModel.KU_Users">
+              <MappingFragment StoreEntitySet="KU_Users">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KU_EmployeeOfTheMonth">
+            <EntityTypeMapping TypeName="user96_dbModel.KU_EmployeeOfTheMonth">
+              <MappingFragment StoreEntitySet="KU_EmployeeOfTheMonth">
+                <ScalarProperty Name="MonthAssigned" ColumnName="MonthAssigned" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="EmployeeOfTheMonthID" ColumnName="EmployeeOfTheMonthID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KU_Tasks">
+            <EntityTypeMapping TypeName="user96_dbModel.KU_Tasks">
+              <MappingFragment StoreEntitySet="KU_Tasks">
+                <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+                <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+                <ScalarProperty Name="IsCompleted" ColumnName="IsCompleted" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KU_LeaveBalance">
+            <EntityTypeMapping TypeName="user96_dbModel.KU_LeaveBalance">
+              <MappingFragment StoreEntitySet="KU_LeaveBalance">
+                <ScalarProperty Name="RemainingLeaveDays" ColumnName="RemainingLeaveDays" />
+                <ScalarProperty Name="UsedLeaveDays" ColumnName="UsedLeaveDays" />
+                <ScalarProperty Name="TotalLeaveDays" ColumnName="TotalLeaveDays" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KU_LeaveRequests">
+            <EntityTypeMapping TypeName="user96_dbModel.KU_LeaveRequests">
+              <MappingFragment StoreEntitySet="KU_LeaveRequests">
+                <ScalarProperty Name="IsNotified" ColumnName="IsNotified" />
+                <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KU_HRRequests">
+            <EntityTypeMapping TypeName="user96_dbModel.KU_HRRequests">
+              <MappingFragment StoreEntitySet="KU_HRRequests">
+                <ScalarProperty Name="Response" ColumnName="Response" />
+                <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,20 @@
+﻿HRD
+
+
+winexe
+C#
+.cs
+C:\рофланы мои\4курс\HRD\HRD\obj\Debug\
+HRD
+none
+false
+DEBUG;TRACE
+C:\рофланы мои\4курс\HRD\HRD\App.xaml
+331706035189
+2-1957146511
+561124499094
+20-1900953425
+AddChildWindow.xaml;AddContactWindow.xaml;AddEditTaskWindow.xaml;AddEducationWindow.xaml;AddEmployeeWindow.xaml;AddLeaveRequestWindow.xaml;AddProfessionalDataWindow.xaml;AddSalaryRecordWindow.xaml;ChildrenWindow.xaml;ContactsWindow.xaml;EditChildWindow.xaml;EditContactWindow.xaml;EditEducationWindow.xaml;EditEmployeeWindow.xaml;EditLeaveRequestWindow.xaml;EditReportWindow.xaml;EditSalaryRecordWindow.xaml;EducationWindow.xaml;EmployeeMainWindow.xaml;EmployeeOfTheMonthWindow.xaml;EmployeesWindow.xaml;HRRequestsWindow.xaml;LeaveBalanceWindow.xaml;LeaveRequestsWindow.xaml;LoginWindow.xaml;MainWindow.xaml;ProfessionalDataWindow.xaml;ReportsAndStatisticsWindow.xaml;RequestLeaveWindow.xaml;ReviewRequestsWindow.xaml;SalaryHistoryWindow.xaml;TaskAdminWindow.xaml;TasksViewWindow.xaml;
+
+False
+
