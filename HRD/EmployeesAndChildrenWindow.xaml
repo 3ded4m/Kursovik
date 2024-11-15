@@ -1,0 +1,22 @@
+﻿<Window x:Class="HRD.EmployeesAndChildrenWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Сотрудники и их дети" Width="649" Height="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#ffffff" Margin="10">
+        <TextBlock Text="Сотрудники и их дети (до 14 лет)" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,20"/>
+
+        <!-- Таблица с данными о сотрудниках и их детях -->
+        <DataGrid x:Name="EmployeesChildrenDataGrid" AutoGenerateColumns="False" Margin="0,50,0,50" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID сотрудника" Binding="{Binding EmployeeID}" Width="100"/>
+                <DataGridTextColumn Header="ФИО сотрудника" Binding="{Binding FullName}" Width="200"/>
+                <DataGridTextColumn Header="ФИО ребенка" Binding="{Binding ChildName}" Width="200"/>
+                <DataGridTextColumn Header="Возраст ребенка" Binding="{Binding ChildAge}" Width="120"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Кнопка Назад -->
+        <Button Content="Назад" Width="80" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10" Click="BackButton_Click"/>
+    </Grid>
+</Window>

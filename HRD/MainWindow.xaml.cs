@@ -142,6 +142,12 @@ namespace HRD
             var reviewRequestsWindow = new ReviewRequestsWindow();
             reviewRequestsWindow.Show();
         }
+        private void ReportsButton_Click(object sender, RoutedEventArgs e)
+        {
+            var reportsWindow = new ReportsWindow(currentUser); // Откройте форму отчетов
+            reportsWindow.Show();
+            this.Close();
+        }
 
     }
 }

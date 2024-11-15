@@ -36,6 +36,7 @@
             <Button Content="Работник месяца" Grid.Row="3" Grid.Column="1" Width="210" Height="40" FontSize="16" Background="#4CAF50" Foreground="White" Margin="10" Click="EmployeeOfTheMonthButton_Click"/>
             <Button Content="Задачи" Grid.Row="4" Grid.Column="0" Width="210" Height="40" FontSize="16" Background="#4CAF50" Foreground="White" Margin="10" Click="TasksButton_Click"/>
             <Button Content="Рассмотрение обращений" Grid.Row="4" Grid.Column="1" Width="210" Height="40" FontSize="16" Background="#4CAF50" Foreground="White" Margin="10" Click="ReviewRequestsButton_Click"/>
+            <Button Content="Отчеты" Grid.Row="4" Grid.Column="0" Width="210" Height="40" FontSize="16" Background="#4CAF50" Foreground="White" Margin="10,69,10,-49" Click="ReportsButton_Click"/>
         </Grid>
 
         <!-- Кнопки "Назад" и "Выход" в левом нижнем углу -->

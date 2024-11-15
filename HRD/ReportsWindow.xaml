@@ -1,0 +1,18 @@
+﻿<Window x:Class="HRD.ReportsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Отчеты" Width="400" Height="300"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#ffffff" Margin="10">
+        <TextBlock Text="Отчеты" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,132"/>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Content="Стаж" Width="200" Height="40" FontSize="16" Background="#4CAF50" Foreground="White" Click="TenureReportButton_Click"/>
+            <Button Content="Сотрудники и их дети" Width="200" Height="40" FontSize="16" Background="#4CAF50" Foreground="White" Margin="10" Click="EmployeesAndChildrenReportButton_Click"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10">
+            <Button Content="Назад" Width="80" Height="30" Background="#2196F3" Foreground="White" FontSize="14" Click="BackButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
